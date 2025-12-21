@@ -1,14 +1,25 @@
-# Relational Database Management System (RDBMS) Mastery
+# 📚 RDBMS Mastery: PostgreSQL & SQL Documentation
 
-This repository contains a comprehensive collection of notes and documentation covering the core principles of Relational Databases, Data Modeling, and hands-on SQL implementation using PostgreSQL.
-
-## 📌 Project Overview
-
-The goal of this repository is to document the journey from database theory to advanced SQL implementation. It is organized into logical modules, starting from the basics of data storage to complex database optimization techniques.
+This repository is a comprehensive collection of **Relational Database Management System (RDBMS)** concepts, design principles, and practical SQL implementation using **PostgreSQL**. It serves as a structured learning guide, from database theory to advanced SQL optimization techniques.
 
 ---
 
-## 📂 Repository File Structure
+## 🚀 Project Overview
+
+The goal of this repository is to **document the journey from database fundamentals to advanced PostgreSQL implementation**. It is organized into logical modules that gradually build your knowledge:
+
+1. **Database theory & design**
+2. **Normalization & relational modeling**
+3. **SQL data types and operations**
+4. **Advanced data manipulation**
+5. **Keys, Joins, and querying techniques**
+6. **Automation and performance optimization (Functions, Procedures, Triggers, Indexing)**
+
+This repository is suitable for students, developers, and anyone aiming to master **PostgreSQL** and **SQL** best practices.
+
+---
+
+## 📂 Repository Structure
 
 ```text
 RDBMS/
@@ -23,7 +34,7 @@ RDBMS/
 │   ├── 8.Foreign Keys.md
 │   ├── 9.Database Design Process.md
 │   └── 10.Relationship Cardinality And ER-Diagrams.md
-├── 2.Database Normalizatin & PostgreSQL/
+├── 2.Database Normalization & PostgreSQL/
 │   ├── 1.Data Anomalies And Types Of Anomalies.md
 │   ├── 2.Normalization And Functional Dependency.md
 │   ├── 3.1NF-Explained.md
@@ -31,88 +42,87 @@ RDBMS/
 │   ├── 5.3NF-Explained.md
 │   ├── 6.Resolving Many-to-Many Relationship.md
 │   └── 7.Updating ER-Diagram Using Junction Table.md
-├── 3.PostgreSQL Database Management & Data Types using PgAdmin/
+├── 3.PostgreSQL Database Management & Data Types/
 │   ├── 1.Integer & Boolean Types In SQL.md
 │   ├── 2.Character Date & UUID Types In SQL.md
-│   └── 3.Column Constraints Multiple Constraints & Insert.md
-├── 4.PostgreSQL Advanced Data Manipulation Techniques/
+│   └── 3.Column Constraints & Insert Operations.md
+├── 4.PostgreSQL Advanced Data Manipulation/
 │   ├── 1.ALTER TABLE & Constraints In SQL & PostgreSQL.md
-│   └── 2.SELECT Basics Filtering Sorting & Functions In Sql And Postgresql.md
-├── 5.PostgreSQL Essentials-Data, Keys, Joins/
-│   ├── 1.Handling Null With Coalesce In Sql And Postgre Sql.md
-│   ├── 2.Limit & Offset Pagination In Sql And Postgre Sql.md
-│   ├── 3.Updating & Deleting Data In Sql And Postgre Sql.md
-│   ├── 4.Group By & Having Explained In Sql And Postgre Sql.md
-│   ├── 5.Foreign Key Explained & Adding Foreign Key Constraints In Sql And Postgre Sql.md
-│   └── 6.Sql Joins Explained – Inner, Left, Right, Full, Cross & Natural.md
-└── 6.Advanced SQL Concepts-Subqueries, Functions, Triggers & Indexing/
+│   └── 2.SELECT Basics, Filtering, Sorting & Functions.md
+├── 5.PostgreSQL Essentials: Keys & Joins/
+│   ├── 1.Handling Null With COALESCE.md
+│   ├── 2.Limit & Offset Pagination.md
+│   ├── 3.Updating & Deleting Data.md
+│   ├── 4.Group By & Having Explained.md
+│   ├── 5.Foreign Key Explained & Adding Constraints.md
+│   └── 6.SQL Joins – Inner, Left, Right, Full, Cross & Natural.md
+└── 6.Advanced SQL Concepts/
     ├── 1.Subquery Basics.md
     ├── 2.Functions Explained.md
-    ├── 3.Procedure.md
-    ├── 4.Trigger.md
+    ├── 3.Stored Procedures.md
+    ├── 4.Triggers.md
     └── 5.Indexing Explained.md
 ```
-
-````
 
 ---
 
 ## 📖 Curriculum Summary
 
-### 1. Database Fundamentals & Relational Data Modeling
+### 1️⃣ Database Fundamentals & Relational Data Modeling
 
-- **Basics:** Data vs. Information and why traditional File Systems fail.
-- **Architecture:** Different types of Database Models and the Anatomy of a Relation.
-- **Key Constraints:** Super, Candidate, Primary, Alternate, and Foreign Keys.
-- **Design:** Database Design Process and ER-Diagrams with Cardinality.
+- **Concepts:** Data vs Information, why file systems fail
+- **Architecture:** Types of database models, anatomy of a table
+- **Keys & Constraints:** Super, Candidate, Primary, Alternate, and Foreign keys
+- **Design:** ER diagrams and relationship cardinality
 
-### 2. Database Normalization & PostgreSQL
+### 2️⃣ Database Normalization & PostgreSQL
 
-- **Data Integrity:** Understanding Data Anomalies.
-- **Normalization Theory:** Functional Dependency and 1NF, 2NF, and 3NF.
-- **Relationships:** Resolving Many-to-Many relationships using Junction Tables.
+- **Integrity:** Understanding data anomalies
+- **Normalization:** Functional dependencies, 1NF, 2NF, 3NF
+- **Relationships:** Many-to-many relationships and junction tables
 
-### 3. PostgreSQL Management & Data Types
+### 3️⃣ PostgreSQL Database Management & Data Types
 
-- **Data Types:** Deep dive into Integers, Booleans, Characters, Dates, and UUIDs.
-- **Operations:** Column Constraints and `INSERT` operations using PgAdmin.
+- **Data Types:** Integer, Boolean, Character, Date, UUID
+- **Operations:** Column constraints and insert operations
 
-### 4. Advanced Data Manipulation (DML)
+### 4️⃣ Advanced Data Manipulation
 
-- **Schema:** Using `ALTER TABLE` and managing constraints.
-- **Retrieval:** Advanced `SELECT` filtering, sorting, and functions.
+- **Schema Management:** `ALTER TABLE` and constraints
+- **Queries:** Advanced `SELECT`, filtering, sorting, and functions
 
-### 5. PostgreSQL Essentials: Keys & Joins
+### 5️⃣ PostgreSQL Essentials: Keys & Joins
 
-- **Data Handling:** `COALESCE`, Pagination (`LIMIT`/`OFFSET`), and `GROUP BY/HAVING`.
-- **Joins:** Inner, Left, Right, Full, Cross, and Natural Joins.
+- **Data Handling:** `COALESCE`, pagination (`LIMIT`/`OFFSET`), `GROUP BY/HAVING`
+- **Joins:** Inner, Left, Right, Full, Cross, and Natural joins
 
-### 6. Advanced SQL Concepts
+### 6️⃣ Advanced SQL Concepts
 
-- **Automation:** Functions, Stored Procedures, and Triggers.
-- **Performance:** Subqueries and Indexing for optimization.
+- **Automation:** Functions, stored procedures, triggers
+- **Optimization:** Subqueries and indexing for performance
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **RDBMS:** PostgreSQL
-- **Administration Tool:** PgAdmin 4
-- **Documentation:** Markdown
-
-## 🚀 Getting Started
-
-1. **Theory:** Start with Folder 1 and 2 for conceptual design.
-2. **Practice:** Use Folder 3, 4, and 5 for hands-on query writing.
-3. **Advanced:** Explore Folder 6 for automation and performance tuning.
+- **Database:** PostgreSQL
+- **Admin Tool:** PgAdmin 4
+- **Documentation:** Markdown (`.md`)
 
 ---
 
-**Author:** Md Rafiq Mia
+## ⚡ Getting Started
 
-**Use Case:** PostgreSQL / SQL Documentation
+1. **Learn Theory:** Begin with folders 1 & 2 for core concepts and normalization
+2. **Hands-On Practice:** Explore folders 3, 4 & 5 for practical SQL exercises
+3. **Advanced Techniques:** Use folder 6 for automation, triggers, and optimization
 
-_Contributions and suggestions are welcome! Feel free to fork this repo and submit a pull request._
+---
 
-```
-````
+## 📌 Author
+
+**Md Rafiq Mia**
+
+**Use Case:** PostgreSQL / SQL documentation and reference for learning and professional use.
+
+**Contributions:** Contributions, feedback, and suggestions are welcome. Fork this repo and submit a pull request to improve the content.
